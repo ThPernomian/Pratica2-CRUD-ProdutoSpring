@@ -3,6 +3,7 @@ package com.cadastroproduto.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cadastroproduto.entities.Produto;
@@ -11,6 +12,7 @@ import com.cadastroproduto.repositories.ProdutoRepository;
 @Service
 public class ProdutoService {
 
+	@Autowired
 	private ProdutoRepository pr;
 	
 	///<S extends T> S save(S entity)
